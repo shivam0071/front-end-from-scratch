@@ -1,0 +1,83 @@
+30-11-2024 - 120 mins  01-02:00
+01-12-2024 - 90 Mins - 01:17:00
+02-12-2024 - 50 Mins - 01:52:00 
+03-12-2024 - 80 Mins - 02:11:00 (exercises)
+04-12-2024 - 30 Mins - 02:22:00 (Images & Text)
+05-12-2024 - 90 Mins - 02:35:00 (exercises)
+06-12-2024 - 110 Mins- 03:16:00 (div and div exercises)
+07-12-2024 - 90 Mins - 03:44:00 (CSS Grids)
+08-12-2024 - 40 Mins - 04:15:00 (FLEX)
+09-12-2024 - 120 Mins - 04:45:00 (FLEX - Exrcises, Nested Flex)
+10-12-2024 - 20 Mins - 04:45:00 (Exercise and Flex Practice)
+11-12-2024 - 20 Mins - 04:45:00 (Exercise and Flex Practice)
+16-12-2024 - 50 Mins - 04:56:00 (Exercise and CSS Positions)
+18-12-2024 - 50 Mins - 05:07:00 (CSS Positions and Exercises)
+19-12-2024 - 50 Mins - 05:19:00 (Exercises and CSS Positions)
+# Had 4 hours ML training from 9th Dec to 20th Dec  
+21-12-2024 - 100 Mins - 05:53:00 (CSS Positions and Exercises and Sidebar)
+22-12-2024 - 100 Mins - 06:31:20 (Everything Else)
+
+
+COURSE - https://www.youtube.com/watch?v=G3e-cpL7ofc&list=LL&index=1&t=63s
+
+Exercises - 
+https://supersimple.dev/exercises/buttons
+https://supersimple.dev/exercises/youtube
+
+>>> Open Link in New Tab 
+<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+
+>>> For circular Radius, Set border Radius as 
+min(height, width)
+
+
+>>> Transition
+  transition: box-shadow 0.15s;
+  /* Property Name, Time */
+
+>>> Box Shadow
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  /* Horizontal Vertical Blur Level (low means low blur) Color */
+
+>>> By Setting Height and Width of an element we say that this element
+should only occuy this much space, for example, the buttons of lesson 2
+Instead we should use the Box Model and Use Paddings Instead.
+The Size of the button/element will automatically change according to the
+content of the element and will not overflow.
+
+>>> vertical-align CSS property helps you control how inline or inline-block 
+elements (like text, images, or spans) align with each other vertically.
+By default, elements are aligned by their Texts, but that can be changed
+
+
+>>> HTML Entity are the special chars that we use so that every browser supports them %gt;
+
+>>> CSS Spicifity --> id >> class >> type selectors, if style is added to the tag itself, it has the heighest priority
+
+>>> Text Elements --> elements that we generally use within other elements, we use span inline elems to add custom styles 
+
+>>> Display - Block , Inline Block (img, input), inline (strong, em etc)
+
+>>> CSS POSITIONS -> TO add another dimension on the Page, example - TO make header and sidebar sticky, to add time on thumbnail, 
+to add no of notifications on bell icon , hover and show tile on the page etc
+
+>>> Postion absolute lets us put an element anywhere on the PAge and it moves with the page
+>>> but if attached to a div with FIX postion, it also stays on the page and doesn't move with the page
+>>> but if we want something like a time appearing on a youtube thumbnail we need position - relative
+
+
+fixed --> absolute 
+the absolute also becomes fixed with respect to its parent element
+
+relative --> absolute
+lets se position an absolute element (place anywhere) but with parent as its container
+also it starts appearing on top of everything else (depending on where it is in the HTML File, if below then it will appear on top) hence we use the Z-index
+
+>>> Z-index is like a 3D structure, decides what appears on top 
+
+
+>>>   pointer-events: none; whatever event occurs on a element (like hover) 
+do nothing on the actual event ( like show notification on hover but do nothing when we hover over notification)
+
+
+>>> whitespace: nowrap --> doesn't wraps the text

@@ -1,0 +1,138 @@
+.thumbnail {
+  width: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+
+.video-preview {
+
+}
+
+.channel-picture {
+  position: relative;
+}
+
+.video-info {
+  cursor: pointer;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50%;
+
+}
+
+.video-title {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  margin-bottom: 10px;
+  /* white-space: no-wrap; */
+}
+
+.video-info a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-stats{
+  cursor: default;
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+
+@media (max-width: 750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and  (max-width: 999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 6px;
+  bottom: 5px;
+  font-size: 12px;
+  border-radius: 2px;
+  padding: 4px 4px 4px 4px;
+  font-weight: 500;
+  font-family: Roboto, Ariel;
+}
+
+.channel-tooltip-container{
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 80px;
+  padding-left: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  gap: 10px;
+  position: absolute;
+  bottom: -60px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.channel-picture:hover .channel-tooltip-container{
+  opacity: 1;
+}
+
+.channel-name{
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14px;
+  margin-bottom: 5px;
+  font-family: Roboto, Arial;
+}
+
+.channel-subs{
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+}

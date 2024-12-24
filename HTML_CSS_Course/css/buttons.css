@@ -1,0 +1,63 @@
+.subscribe-button {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  height: 35px;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity 0.15s;
+}
+
+/* Pseudo Class after Colons */
+.subscribe-button:hover {
+  opacity: 0.7;
+}
+
+.subscribe-button:active {
+  opacity: 0.5;
+}
+
+.join-button {
+  height: 35px;
+  width: 60px;
+  color: rgb(55, 55, 180);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(55, 55, 180);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.join-button:hover {
+  color: white;
+  background-color: rgb(55, 55, 180);
+}
+
+.join-button:active {
+  color: white;
+  background-color: rgba(55, 55, 180, 0.8);
+}
+
+
+.tweet-button {
+  height: 32px;
+  width: 70px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(39, 158, 255);
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  /* Property Name, Time */
+}
+
+.tweet-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  /* Horizontal Vertical Blur Level (low means low blur) Color */
+}

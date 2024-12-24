@@ -1,0 +1,103 @@
+<style>
+a {
+margin-left: 6px;
+margin-right: 6px;
+text-align: center;
+padding: 1px 1px 1px 1px;
+}
+
+.btn {
+padding: 10px 7px 10px 7px;
+}
+
+.basic-button{
+color: white;
+background-color: green;
+padding: 5px 10px 5px 10px;
+border: none;
+}
+
+.stretch-button{
+  transition: padding 0.50s;
+}
+
+.stretch-button:hover {
+padding: 20px 40px 20px 40px;
+}
+
+.shadow-button{
+  transition: box-shadow 0.25s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) ;
+
+}
+
+.shadow-button:active {
+  box-shadow: none;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.wide-button{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: padding 0.15s, margin 0.15s;
+}
+
+.wide-button:hover{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+</style>
+
+<button class="btn">
+  Back
+</button>
+<a href=""> 1 </a>
+<a href=""> 2 </a>
+<a href=""> 3 </a>
+<a href=""> 4 </a>
+<a href=""> 5 </a>
+
+<button class="btn">
+  Next
+</button>
+
+
+<p> Stretch </p>
+
+<button class="basic-button stretch-button">
+  Stretch
+</button>
+
+<p> 3D Click </p>
+
+<button class="basic-button shadow-button">
+  Shadow
+</button>
+
+<p> Margin and Padding Together </p>
+
+<button class="wide-button">
+  One
+</button>
+
+<button class="wide-button">
+  Two
+</button>
+
+<button class="wide-button">
+  Three
+</button>

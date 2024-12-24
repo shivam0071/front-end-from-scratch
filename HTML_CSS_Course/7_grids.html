@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Grids Practice</title>
+  </head>
+  <body>
+<!-- n rows * 2 cols -->
+  <div style="display: grid; grid-template-columns: 100px 100px;">
+    <div style="background-color: lightcoral;">Div 1</div>
+    <div style="background-color: lightgreen;">Div 2</div>
+  </div>
+  <!-- n rows * 3 cols -->
+  <div style="margin-top:30px; display:grid; grid-template-columns: 100px 100px 100px;">
+    <div style="background-color: lightcoral;">Div 1</div>
+    <div style="background-color: lightgreen;">Div 2</div>
+    <div style="background-color: lightgoldenrodyellow;"><p>Hello</p></div>
+
+    <div style="background-color: lightcoral;">Div 1</div>
+    <div style="background-color: lightgreen;">Div 2</div>
+    <div style="background-color: lightgoldenrodyellow;"><p>Hello2</p></div>
+  </div>
+
+  <div style="margin-top:30px; display:grid; grid-template-columns: 100px 1fr 2fr;">
+    <div style="background-color: lightcoral;">Div 1</div>
+    <div style="background-color: lightgreen;">Div 2</div>
+    <div style="background-color: lightgoldenrodyellow;"><p>Hello</p></div>
+  </div>
+
+<!-- To be used in YT Clone -->
+  <div style="margin-top:30px; display:grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 15px; row-gap: 40px;">
+    <div style="background-color: lightcoral;">Div 1</div>
+    <div style="background-color: lightgreen;">Div 2</div>
+    <div style="background-color: lightgoldenrodyellow;">Div 3</div>
+
+    <div style="background-color: lightgoldenrodyellow;">Div 3</div>
+    <div style="background-color: lightcoral;">Div 1</div>
+    <div style="background-color: lightgreen;">Div 2</div>
+  </div>
+
+  </body>
+
+</html>

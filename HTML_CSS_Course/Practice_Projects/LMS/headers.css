@@ -1,0 +1,62 @@
+.header{
+  width: 100%;
+  position: fixed;
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  font-size: 15px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+
+.top-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgb(75, 75, 75);
+}
+
+.app-name, .hello-font{
+  color: orangered;
+  font-weight: bold;
+}
+
+.logo{
+  width: 100px;
+  height: 50px;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.down-section{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  align-items: center;
+}
+
+.mid-section{
+  flex: 1;
+  display: flex;
+  gap: 30px
+}
+
+.left-section{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.mid-section p {
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.mid-section p:hover, 
+.logo:hover{
+  color: orangered;
+}
+

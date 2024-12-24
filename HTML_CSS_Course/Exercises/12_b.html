@@ -1,0 +1,206 @@
+<html>
+
+<head>
+  <style>
+div {
+  font-family: Arial;
+}
+
+.container {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  width: 300px;
+  border-radius: 6px;
+  margin-bottom: 100px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.notifications {
+  background-color: rgb(49, 109, 245);
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container-2 {
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200); */
+  width: 400px;
+  border-radius: 6px;
+  margin-bottom: 100px;
+}
+
+.ex-7c{
+        width: 50px;
+        height: 50px;
+        border-radius: 75px;
+        object-fit: cover;
+        object-position: center;
+      }
+.notifications-2 {
+  background-color: rgb(49, 109, 245);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p{
+  margin: 0;
+}
+
+.flexbox-2 {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.info{
+  flex:1;
+  padding-left: 15px;
+  text-align: start;
+  line-height: 18px;
+}
+
+.info-name{
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.info-who{
+  font-size: 13px;
+  color: grey;
+}
+
+.info-what{
+  font-size: 12px;
+  color: grey;
+}
+
+.container-3{
+  background-color: rgb(120, 82, 178);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+.home{
+  font-weight: bold;
+}
+
+.input{
+  width: 500px;
+  border: none;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+
+.btn{
+  background-color: rgb(120, 82, 178);
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px 5px 10px;
+  margin-right: 10px;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="flexbox">
+      <div>Home</div>
+      <div class="notifications">14</div>
+    </div>
+    <div class="flexbox">
+      <div>Notifications</div>
+      <div class="notifications">3</div>
+    </div>
+    <div class="flexbox">
+      <div>Messages</div>
+      <div class="notifications">5</div>
+  </div>
+</div>
+
+
+  <div class="container-2">
+    <div class="flexbox-2">
+      <div>
+        <img class="ex-7c" src="sakura.jpg">
+      </div>
+      <div class="info">
+        <p class="info-name">Sakura</p>
+        <p class="info-who">The Ninja</p>
+        <p class="info-what">Useless</p>
+      </div>
+      <div class="notifications-2">Follow</div>
+    </div>
+
+    <div class="flexbox-2">
+      <div>
+        <img class="ex-7c" src="sasuke1.jpg">
+      </div>
+      <div class="info">
+        <p class="info-name">Sasuke</p>
+        <p class="info-who">The Betrayer</p>
+        <p class="info-what">Sharingan</p>
+      </div>
+      <div class="notifications-2">Follow</div>
+    </div>
+
+    <div class="flexbox-2">
+      <div>
+        <img class="ex-7c" src="sasuke2.png">
+      </div>
+      <div class="info">
+        <p class="info-name">Sasuke</p>
+        <p class="info-who">rouge ninja</p>
+        <p class="info-what">Mangekyo</p>
+      </div>
+      <div class="notifications-2">Follow</div>
+    </div>
+  </div>
+
+    <div class="container-3">
+      <p class="home">Home</p>
+      <input class="input" type="text" placeholder="Search">
+      <button class="btn">Download</button>
+    </div>
+
+    
+</body>
+
+</html>

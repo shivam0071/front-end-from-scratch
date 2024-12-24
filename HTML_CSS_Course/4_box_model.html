@@ -1,0 +1,96 @@
+<!-- BASIC CSS -->
+<!-- Copy the below buttons -->
+<!-- https://supersimple.dev/exercises/buttons -->
+
+<!--By Setting Height and Width of an element we say that this element
+should only occuy this much space, for example, the buttons of lesson 2
+Instead we should use the Box Model and Use Paddings Instead.
+The Size of the button/element will automatically change according to the
+content of the element   -->
+
+<style>
+  .subscribe-button {
+    background-color: rgb(204, 0, 0);
+    color: white;
+    border: none;
+    /* height: 35px;
+    width: 105px; */
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    padding: 10px 16px 10px 16px;
+    vertical-align: top;
+    /* vertical-align CSS property helps you control how inline or inline-block elements (like text, images, or spans) align with each other vertically. */
+  }
+  
+  /* Pseudo Class after Colons */
+  .subscribe-button:hover {
+    opacity: 0.7;
+  }
+  
+  .subscribe-button:active {
+    opacity: 0.5;
+  }
+  
+  .join-button {
+    /* height: 35px;
+    width: 60px; */
+    color: rgb(6, 95, 212);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(6, 95, 212);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.25s, color 0.25s;
+    padding: 10px 15px 10px 15px;
+    vertical-align: top;
+  }
+  
+  .join-button:hover {
+    color: white;
+    background-color: 065fd4;
+  }
+  
+  .join-button:active {
+    color: white;
+    background-color: rgba(55, 55, 180, 0.8);
+  }
+  
+  
+  .tweet-button {
+    /* height: 32px;
+    width: 70px; */
+    border-radius: 20px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(29, 155, 240);
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+    /* Property Name, Time */
+    padding: 7px 16px 7px 16px;
+    vertical-align: top;
+  }
+  
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    /* Horizontal Vertical Blur Level (low means low blur) Color */
+  }
+  
+  </style>
+  
+  
+  <button class="subscribe-button">
+    SUBSCRIBE
+  </button>
+  
+  <button class="join-button">
+    JOIN
+  </button>
+  
+  <button class="tweet-button">
+    Tweet
+  </button>

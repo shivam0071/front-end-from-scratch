@@ -1,5 +1,4 @@
 .header{
-  width: 100%;
   position: fixed;
   background-color: hsl(0, 0%, 0%);
   color: white;
@@ -7,6 +6,7 @@
   left: 0px;
   top: 0px;
   right: 0px;
+  z-index: 100;
 }
 
 .top-section{
@@ -14,8 +14,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   border: 1px solid rgb(75, 75, 75);
 }
 
@@ -53,6 +53,7 @@
 .mid-section p {
   cursor: pointer;
   transition: color 0.15s;
+  font-size: 18px;
 }
 
 .mid-section p:hover, 

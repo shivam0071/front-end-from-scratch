@@ -1,4 +1,4 @@
-.main-title{
+.main-title, .main-title2{
   color: orangered;
   font-weight: bold;
   font-size: 22px;
@@ -15,8 +15,8 @@
 
 .icon-box{
   display: flex;
-  height: 70px;
-  width: 300px;
+  height: 80px;
+  width: 340px;
   gap: 10px;
   align-items: center;
   /* white-space: nowrap; */
@@ -25,6 +25,21 @@
   /* padding-right: 10px; */
   border: 1px solid black;
   justify-content: space-evenly;
+  transition: background-color 0.15s;
+}
+
+.icon-box:hover{
+  background-color: orangered;
+  color: white;
+  border: 0px;
+  border-right: 3px solid orangered;
+}
+
+.icon-box:hover .balance{
+  color: orangered;
+  border-left: 0px;
+  background-color: white;
+  /* /* border-top: 2px solid orangered; */
 }
 
 .logo2{
@@ -38,15 +53,75 @@
 }
 
 .leave-name{
-width: 170px;
+width: 200px;
+
 }
 
 .balance{
   flex: 1;
   border-left: 1px solid black;
   text-align: center;
-  padding: 24px 3px 24px 3px;
+  padding: 25px 3px 25px 3px;
   margin: 0px;
   font-weight: bold;
   font-size: 20px;
+}
+
+.main-title2{
+  margin-top: 30px;
+}
+
+
+.legends{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.blue, .green, .yellow, .orange, .grey{
+  width: 20px;
+  height: 20px;
+  background-color: brown;
+  margin-right: 10px;
+}
+
+.blue{
+  background-color: rgb(6, 69, 216);
+}
+
+.green{
+  background-color: rgb(0, 171, 74);
+}
+
+.yellow{
+  background-color: rgb(234, 234, 0);
+}
+
+.orange{
+  background-color: orangered;
+}
+
+.grey{
+  background-color: grey;
+}
+
+.legends p{
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.calendar{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 20px;
+  
+}
+
+.cal{
+  width: 400px;
+  height: 250px;
+  background-color: rgb(209, 209, 209);
+  border-radius: 20px;
 }

@@ -1,0 +1,86 @@
+.my-info{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  gap: 50px;
+}
+
+
+.basic-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.upgrade-btn{
+  position: relative;
+  border: 1px solid orangered;
+  background-color: #fffaf8;
+  border-radius: 25px;
+  padding: 2px 5px;
+  width: 90px;
+  height: 37px;
+  font-size: 14px;
+  color: orangered;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.edit-my-info, .edit-settings{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-img-profile-row{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content:left;
+  padding-left: 20px;
+}
+
+.edit-my-info p, .edit-settings p{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.edit-my-info img, .edit-settings img{
+  width: 15px;
+  height: 15px;
+}
+
+
+.my-profile-logo{
+  padding-top: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.morning{
+  font-size: 15px;
+}
+
+.name{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.acc-id{
+  font-size: 14px;
+}
+
+.membership{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.member-ad{
+  font-size: 14px;
+}

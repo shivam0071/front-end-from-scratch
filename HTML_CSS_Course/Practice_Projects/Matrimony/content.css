@@ -1,0 +1,64 @@
+.main-container{
+  width: auto;
+  margin: 0 200px;
+}
+
+.prime-member{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.btn-design{
+  position: relative;
+  z-index: 10;
+}
+
+.regular-btn{
+  position: relative;
+  border: 1px solid orangered;
+  background-color: rgb(255, 228, 218);
+  border-radius: 25px;
+  padding: 2px 5px;
+  width: 120px;
+  height: 37px;
+  font-size: 14px;
+  color: orangered;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.prime-btn{
+  position: absolute;
+  left: 95px;
+  border: none;
+  background-color: rgba(255, 255, 255);
+  border-radius: 25px;
+  padding: 2px 5px;
+  width: 120px;
+  height: 37px;
+  font-size: 14px;
+  font-weight: 550;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.main-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid black; */
+  /* background-color: lightskyblue; */
+}
+
+.sidebar{
+  width: 300px;
+  height: auto;
+}
+
+.content{
+  flex: 1;
+  border: 1px solid rgb(255, 0, 0);
+  background-color: lightsalmon;
+}

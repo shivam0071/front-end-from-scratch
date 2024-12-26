@@ -7,6 +7,7 @@
 }
 
 .leave-info{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
@@ -16,7 +17,7 @@
 .icon-box{
   display: flex;
   height: 80px;
-  width: 340px;
+  width: 350px;
   gap: 10px;
   align-items: center;
   /* white-space: nowrap; */
@@ -25,21 +26,30 @@
   /* padding-right: 10px; */
   border: 1px solid black;
   justify-content: space-evenly;
-  transition: background-color 0.15s;
+  transition: background-color 0.15s, border-color 0.15s, border-right-color 0.15s, border-left-color 0.15s;
+  box-sizing: border-box; /* Include borders in dimensions */
 }
 
 .icon-box:hover{
-  background-color: orangered;
+  /* background-color: orangered;
   color: white;
   border: 0px;
-  border-right: 3px solid orangered;
+  border-right: 3px solid orangered; */
+
+  background-color: orangered;
+  color: white;
+  border-right: 3px solid orangered; /* Change right border width and color on hover */
+  border-color: orangered; /* Update other borders' color */
 }
 
 .icon-box:hover .balance{
-  color: orangered;
+  /* color: orangered;
   border-left: 0px;
+  background-color: white; */
+  border-left-color: transparent;
+  color: orangered;
   background-color: white;
-  /* /* border-top: 2px solid orangered; */
+  
 }
 
 .logo2{
@@ -111,17 +121,101 @@ width: 200px;
 }
 
 .calendar{
+  display: flex;
   margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  column-gap: 20px;
+  gap: 50px;
+  justify-content: center;
   
 }
 
 .cal{
-  width: 400px;
-  height: 250px;
+  width: 450px;
+  height: 270px;
   background-color: rgb(209, 209, 209);
   border-radius: 20px;
 }
+
+@media(min-width: 1200px) and (max-width: 1299px){
+  .icon-box{
+    display: flex;
+    height: 80px;
+    width: 250px;
+    gap: 10px;
+    align-items: center;
+    /* white-space: nowrap; */
+    /* background-color: rgb(255, 255, 255); */
+    background-color: white;
+    padding-left: 10px;
+    /* padding-right: 10px; */
+    border: 1px solid black;
+    justify-content: space-evenly;
+    transition: background-color 0.15s;
+  }
+
+  .leave-name{
+    width: 120px;
+    }
+}
+
+/* @media(min-width: 1300px) and (max-width: 2783px){
+  .icon-box{
+    display: flex;
+    height: 80px;
+    width: 300px;
+    gap: 10px;
+    align-items: center;
+    /* white-space: nowrap; */
+    /* background-color: rgb(255, 255, 255); */
+    background-color: white;
+    padding-left: 10px;
+    /* padding-right: 10px; */
+    border: 1px solid black;
+    justify-content: space-evenly;
+    transition: background-color 0.15s;
+  }
+
+  .leave-name{
+    width: 170px;
+    }
+} */
+
+/* @media(min-width: 2784px) and (max-width: 4960px){
+  .icon-box{
+    display: flex;
+    height: 200px;
+    width: 1200px;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    transition: background-color 0.15s;
+  }
+
+  .logo2{
+    width: 150px;
+    height: 150px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(10deg) brightness(118%) contrast(119%);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 100px;
+  }
+  
+  .leave-name{
+  width: 800px;
+  font-size: 50px;
+  margin-left: 50px;
+  }
+  
+  .balance{
+    flex: 1;
+    border-left: 1px solid black;
+    text-align: center;
+    padding: 25px 3px 25px 3px;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+} */
+

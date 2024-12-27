@@ -10,7 +10,7 @@
   /* left: -120px;  */
   right: 0px;
   transition: opacity 0.15s;
-  /* pointer-events: none; */
+  pointer-events:none;
   opacity: 0;
   background-color: white;
   padding-bottom: 30px;

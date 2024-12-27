@@ -10,7 +10,7 @@
 }
 
 .header{
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   gap: 20px;
   width: auto;
   margin: 0 200px; /* Center the content horizontally */

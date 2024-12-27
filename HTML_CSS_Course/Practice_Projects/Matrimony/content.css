@@ -1,6 +1,6 @@
 .main-container{
   width: auto;
-  margin: 0 200px;
+  margin: 0 150px;
 }
 
 .prime-member{
@@ -81,8 +81,8 @@
 }
 
 .matches-img{
-  width: 175px;
-  height: 175px;
+  width: 190px;
+  height: 190px;
   border-radius: 10px;
 }
 
@@ -110,4 +110,15 @@
 
 .match-age{
   font-size: 12px;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1400px){
+  .main-container{
+    margin: 0 50px;
+  }
+
+  .header{
+    margin: 0 50px;
+  }
 }

@@ -1,5 +1,5 @@
 .footer{
-  margin: 0px 200px;
+  margin: 0px 150px;
   margin-top: 80px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
@@ -50,4 +50,11 @@
 .footer-heading{
   padding-top: 25px;
   margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+  .footer{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }

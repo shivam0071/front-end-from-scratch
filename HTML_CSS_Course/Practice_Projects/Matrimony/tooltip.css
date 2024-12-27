@@ -1,0 +1,103 @@
+.my-info2{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  gap: 50px;
+  position: absolute;
+  top: 80px;
+  /* left: -120px;  */
+  right: 0px;
+  transition: opacity 0.15s;
+  /* pointer-events: none; */
+  opacity: 0;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+
+.basic-info2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.upgrade-btn2{
+  position: relative;
+  border: 1px solid orangered;
+  background-color: #fffaf8;
+  border-radius: 25px;
+  padding: 2px 5px;
+  width: 90px;
+  height: 37px;
+  font-size: 14px;
+  color: orangered;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.edit-my-info2, .edit-settings2{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-img-profile-row2{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content:left;
+  padding-left: 20px;
+}
+
+.edit-my-info2 p, .edit-settings2 p{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.edit-my-info2 img, .edit-settings2 img{
+  width: 15px;
+  height: 15px;
+}
+
+
+.my-profile-logo2{
+  padding-top: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.morning2{
+  font-size: 15px;
+}
+
+.name2{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.acc-id2{
+  font-size: 14px;
+}
+
+.membership2{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.member-ad2{
+  font-size: 14px;
+}
+
+.profile-info-hover:hover .my-info2{
+  opacity: 1;
+}
+
+.profile-info-hover{
+  position: relative;
+}

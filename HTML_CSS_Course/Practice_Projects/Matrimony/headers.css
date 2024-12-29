@@ -13,7 +13,7 @@
   /* flex-shrink: 0; */
   gap: 20px;
   width: auto;
-  margin: 0 200px; /* Center the content horizontally */
+  margin: 0 150px; /* Center the content horizontally */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -38,8 +38,8 @@
 }
 
 .nav-logo{
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   /* filter: invert(1); */
 }

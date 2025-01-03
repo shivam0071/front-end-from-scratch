@@ -8,6 +8,14 @@ p{
   font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f4f7;
+    gap: 50px;
+}
+  
+
 .main-container{
   padding-bottom: 112px;
   padding-top: 72px;
@@ -20,14 +28,6 @@ p{
   padding: 20px 0;
   position: relative;
   width: 980px;
-}
-
-.container{
-  display: flex;
-  flex-direction: row;
-  background-color: #f2f4f7;
-  align-items: center;
-  gap: 50px
 }
 
 .icon{
@@ -48,12 +48,13 @@ p{
   display: block;
   width: 85%;
   margin-top: 15px;
-  height: 40px;
+  height: 50px;
   border-radius: 5px;
-  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
   padding: 0px 10px;
   font-size: 16px;
-  color: black
+  color: black;
+  font-weight: 500;
 }
 
 input:focus{
@@ -66,8 +67,11 @@ input:focus::placeholder{
   color: rgba(128, 127, 127, 0.8);
 }
 
+input::placeholder { color: rgba(128, 127, 127, 0.8); }
+
 .login{
-  flex: 0.9;
+  flex: 1;
+  margin-top: 30px;
 }
 .login-form{
   display: flex;
@@ -76,7 +80,8 @@ input:focus::placeholder{
   box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 
   0px 8px 16px rgba(0, 0, 0, .1);
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 97%;
 }
 
 .login-btn{
@@ -89,6 +94,7 @@ input:focus::placeholder{
   font-size: 20px;
   font-weight: bold;
   border: none;
+  cursor: pointer;
 }
 
 .forgotten{
@@ -96,29 +102,38 @@ input:focus::placeholder{
   font-size: 15px;
   margin: 15px 0px;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .new-account{
   width: 90%;
   border-top: 1px solid rgba(130, 130, 130, 0.5);
-  padding-top: 20px;
+  padding-top: 30px;
   text-align: center;
 }
 
 .create-btn{
   background-color: #42b72a;
-  width: 50%;
-  height: 50px;
+  width: 53%;
+  height: 45px;
   border-radius: 5px;
   color: white;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   border: none;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .fb-ad{
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 14px;
 }
+
+/* @media (max-width: 900px) {
+  .container{
+    background-color: rgb(17, 168, 219);
+  }
+
+} */

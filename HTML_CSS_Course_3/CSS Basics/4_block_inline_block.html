@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Property</title>
+  <style>
+
+    div{
+      background-color: aquamarine;
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    span{
+      background-color: lightcoral;
+      width: 100px;
+      height: 100px;
+      margin-left: 100px;
+      margin-top: 100px;
+      /* can't set margin-top or margin-bottom */
+      /* can't set width and height */
+      /* can set padding */
+    }
+
+    .inline-block{
+      background-color: lightcoral;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin-top: 50px;
+    }
+
+  </style>
+</head>
+<body>
+    <div>Block 1</div>
+    <div>Block 2</div>
+    <span>Inline 1</span>
+    <span>Inline 2</span>
+    <p class="inline-block">Inline Block 1</p>
+    <p class="inline-block">Inline Block 2</p>
+</body>
+</html>

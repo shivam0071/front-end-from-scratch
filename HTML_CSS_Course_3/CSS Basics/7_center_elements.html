@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center Elements</title>
+  <style>
+    html{
+      height: 100%;
+    }
+    body{
+      align-content: center;
+      margin: 0px;
+      height: 100%;
+    }
+    div{
+      /* Margin auto is used to center the element */
+      margin: 0 auto;  
+      width: 50%;
+      height: 300px;
+      background-color: lightblue;
+      align-content: center;
+    }
+    p{
+      margin: 0 auto;  
+      width: 50%;
+      height: 150px;
+      background-color: lightcoral;
+      text-align: center;
+      align-content: center;
+    }
+  </style>
+</head>
+<body>
+    <div>
+      <p>Hello World</p>
+    </div>
+</body>
+</html>
+
+<!-- 
+Key points about centering elements:
+
+1. Using margin: 0 auto
+- Sets top/bottom margins to 0 and left/right to auto
+- Centers block elements horizontally within their container
+- Element must have a defined width
+
+2. Using text-align: center 
+- Centers inline content (text) within a block element
+
+3. Height settings
+- html and body set to 100% height to fill viewport
+- div takes 50% width and 300px height
+- p takes 50% width and 150px height
+
+4. Margin reset
+- body margin set to 0 to remove default spacing
+
+5. Background colors used for visualization
+- div: lightblue
+- p: lightcoral
+
+-->
+

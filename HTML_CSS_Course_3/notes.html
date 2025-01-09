@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Notes</title>
+</head>
+<body>
+  <h1 id="course-notes">Course Notes</h1>
+  <hr/>
+
+  <h3>General Points</h3>
+  <ul>
+    <li><p>There are self closing tags in HTML like '&lt;hr/&gt;' and '&lt;br/&gt;'</p></li>
+    <li><p>If you want to create a line you can use self closing tag '&lt;hr/&gt;' </p></li>
+    <li><p>Some more tags are <mark>&lt;mark&gt;</mark>, <small>&lt;small&gt;</small>, <del>&lt;del&gt;</del>, <ins>&lt;ins&gt;</ins>, <sub>&lt;sub&gt;</sub>, <sup>&lt;sup&gt;</sup></p></li>
+    <li><p>We can use the 'title' attribute to add a tooltip to an element, Try adding tooltip to any clickable element, as it inceases readability and adds keywords</p></li>
+  </ul>
+
+  <br/>
+  <h3>Images</h3>
+  <ul>
+    <li><p>You can use <a href="pixabay.com">Pixabay</a> to find free images, or you can just use Gemini to generate images</p></li>
+    <li><p>img is also a self closing tag</p></li>
+    <li><p>You can use the 'alt' attribute to describe the image</p></li>
+    <li><p>alt is important for SEO and accessibility for people with disabilities</p></li>
+    <li><p>We need to specify the width and height of the image in HTML itself because of CLS (Cumulative Layout Shift), If we specify the width and height of the image in HTML, 
+      the browser will know how much space to reserve for the image, and it will not cause the page to shift when the image loads.</p></li>
+  </ul>
+
+  <h3>Anchor Tag</h3>
+  <ul>
+    <li><p>If we want to link within the same page, We can specify the id of the element we want to link to</p></li>
+    <li><a href="#course-notes">Link</a></li>
+  </ul>
+
+  <br>
+  <hr/>
+  <h2>CSS Notes</h2>  
+  <h3>CSS Selectors</h3>
+  <ul>
+    <li><p>By Default, A body doesn't have a height, we need to set it in the CSS</p></li>
+    <li><p>* is a universal selector, it selects all elements</p></li>
+    <li><p>Specificity is the order of the selectors, the more specific the selector, the more weight it has</p></li> 
+    <li><p>Specificity is higher in the following order: ID > Class > Element </p></li>
+    <li><p>If we have two selectors with the same specificity, the one that comes last in the CSS file will be applied</p></li>
+    <li><p>If we want to select an element that is a direct child of another element, we can use the '>' symbol</p></li>
+    <li><p>If we want to select an element that has a specific attribute, we can use the '[]' symbol</p></li>
+  </ul>    
+  
+  <br>
+  <h3>Inline, Block and Inline-Block</h3>
+  <ul>
+    <li><p>Inline elements take up as much width as their content, and they don't have a height or width and they don't have a margin</p></li>
+    <li><p>Block elements take up the full width of the parent element, and they have a height and width</p></li>
+    <li><p>Inline-Block elements take up as much width as their content, and they have a height and width</p></li>
+  </ul>    
+
+  <h3>Font - Settings</h3>
+  <ul>
+    <li><p>CSS Units - px, pt, em, rem, %, vh, vw, vmin, vmax </p></li>
+    <li><p>px - pixels, 1px = 1/96 inch, 0.26mm</p></li>
+    <li><p></p>pt - points, 1pt = 1/72 inch, 0.35mm</p></li> 
+    <li><p>1em = 16px, em is relative to the parent element</p></li>  
+    <li><p><b>1rem = 16px, rem is relative to the root element, rem can be used to make the font size of the entire page responsive</b><p></li>
+    <li><p>1vh = 1% of the viewport height</p></li>
+    <li><p>1vw = 1% of the viewport width</p></li>
+    <li><p>1vmin = 1% of the viewport width or height, whichever is smaller</p></li>
+    <li><p>1vmax = 1% of the viewport width or height, whichever is larger</p></li>
+  </ul>    
+
+        
+</body>
+</html>

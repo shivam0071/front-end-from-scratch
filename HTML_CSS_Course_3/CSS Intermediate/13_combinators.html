@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinators</title>
+  <style>
+    header{
+      text-align: center;
+      margin: 0 auto;
+      width: 500px;
+      height: 100px;
+      background-color: lightblue;
+    }
+    div{
+      text-align: center;
+      margin: 0 auto;
+      width: 500px;
+      height: 100px;
+      background-color: lightcyan;
+    }
+
+    /* Child Selector */
+    /* It selects the child element of the parent element and no grandchildren elements are impacted */
+    header > h1{
+      color: red;
+    }
+
+    div > p {
+      color: blue;
+    }
+
+    header.header > h1{
+      color: rgb(97, 91, 90);
+    }
+
+    article > p {
+      color: green;
+    }
+
+    div > article > p {
+      color: orange;
+    }
+
+    /* Descendant Selector */
+    /* It selects all the child elements of the parent element*/
+    div p {
+      color: blue;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Welcome to my website</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  </header>
+  <header>
+    <h1>Welcome to my website</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  </header>
+  <div>
+    <h1>Whats up?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  </div>
+  
+  <div>
+    <h1>An Article</h1>
+    <article>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    </article>
+  </div>
+
+  <div>
+    <h1>An Article</h1>
+    <article>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    </article>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  </div>
+
+</body>
+</html>

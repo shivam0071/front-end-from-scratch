@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient</title>
+  <style>
+    div{
+      height: 300px;
+      width: 300px;
+      border: 2px solid black;
+      margin-bottom: 50px;
+    }
+
+    .linear-gradient1{
+      background-image: linear-gradient(to bottom, red, blue, yellow);
+    }
+    .linear-gradient2{
+      /* percentages starts from top 0 to bottom 100 */
+      background-image: linear-gradient(180deg, red 30%, blue 60%, green 60%);
+      /* straigh line as we did not gave room between 60 and 90 */
+      /* It means 0 to 30 is red, 30 to 60 is blue, 60 to 90 is green */
+    }
+    .linear-gradient3{
+      background-image: linear-gradient(to bottom, orange 33%, white 33%  66%, green 66%);
+      /* flag example */
+    }
+
+    .linear-gradient4{
+      background-image: linear-gradient(200deg, transparent 50%, black 50%);
+      /* to make a line in the middle with some style */
+      /* flag example */
+    }
+    .radial-gradient1{
+      /* percentages starts from center 0 to outwards 100 */
+      background-image: radial-gradient(red, blue, green);
+    }
+    .radial-gradient2{
+      /* percentages starts from center 0 to outwards 100 */
+      background-image: radial-gradient(at top, red, blue, yellow);
+    }
+    .radial-gradient3{
+      /* percentages starts from center 0 to outwards 100 */
+      background-image: radial-gradient(blue, green, transparent 50%), linear-gradient(to right, black, pink);
+    }
+    .radial-gradient4{
+      /* percentages starts from center 0 to outwards 100 */
+      background-color: black;
+      background-image: radial-gradient(black 30%, white 30%, transparent 40%)
+    }
+  </style>
+</head>
+<body>
+  <div class="linear-gradient1"></div>
+  <div class="linear-gradient2"></div>
+  <div class="linear-gradient3"></div>
+  <div class="linear-gradient4"></div>
+  <br/>
+  <p>Radial Gradient</p>
+  <br/>
+  <br/>
+  <div class="radial-gradient1"></div>
+  <div class="radial-gradient2"></div>
+  <div class="radial-gradient3"></div>
+  <div class="radial-gradient4"></div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before and After</title>
+  <style>
+
+    h1{
+      position: relative;
+      width: max-content;
+    }
+
+    h1::before{
+      content: "🔥";
+    }
+
+    h1::after{
+      content: '';
+      height: 2px;
+      background-image: linear-gradient(to right, red, blue);
+      position: absolute;
+      bottom: -3px;
+      left: 0px;
+      width: 100%;
+      transition: width 100ms ease-in-out;
+    }
+
+    h1:hover::after{
+      width: 0px;
+    }
+
+    button{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      position: relative;
+      width: 200px;
+      height: 70px;
+      cursor: pointer;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: none;
+      background-color: rgb(42, 182, 247);
+      color: white;
+      border-radius: 1px;
+      z-index: 1;
+      transition: color 200ms;
+    }
+
+    button::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 1px;
+      width: 0%;
+      height: 100%;
+      /* background: linear-gradient(to right, yellow, rgb(208, 208, 2)); */
+      background-color: yellow;
+      transition: 
+                width 200ms;
+                z-index: -1;
+    }
+
+    button:hover::after{
+      width: 100%;
+    }
+
+    button:hover{
+      color: black;
+    }
+
+    ul{
+      list-style-type: none;
+      position: relative;
+      padding-left: 30 px;
+      
+    }
+
+    li{
+      margin-top: 5px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relative;  /* Add this */
+    }
+
+    li::before{
+      content: "🔥";
+      position: absolute;
+      left: -30px;  /* Negative value to position star before text */
+      width: 20px;  /* Add fixed width */
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>
+    My Heading
+  </h1>
+
+  <h1>Another Heading</h1>
+
+  <button>Hover Me!</button>
+
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li> 
+  </ul>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations</title>
+  <style>
+    html{
+      height: 100%;
+    }
+    body{
+      height: 100%;
+      text-align: center;
+      align-content: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+    div{
+      width: 50%;
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      text-align: center;
+      align-content: center;
+      margin-bottom: 100px;
+    }
+
+    .box1{
+      animation-name: spin;
+      animation-duration: 3s;
+      /* This is enough for one animation */
+      
+      animation-delay: 1s;
+      animation-iteration-count: 2;
+      animation-direction: normal;
+
+      animation-fill-mode: forwards;
+      /* Stays a Circle */
+
+      /* Animation Play state allows the use to interact with the animation */
+      animation-play-state: running;
+
+      /* animation shorthand*/
+    }
+
+    .box1:hover, .box2:hover{
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+    
+
+    @keyframes spin {
+      0%{
+
+      }
+
+      50%{
+        scale: 2;
+        color: white;
+        transform: rotate(0deg);
+      }
+
+      100%{
+        transform: rotate(360deg);
+        border-radius: 50px;
+      }
+    }
+
+    .box2{
+      animation-name: spin;
+      animation-duration: 3s;
+      /* This is enough for one animation */
+      
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+
+      animation-fill-mode: forwards;
+      /* Stays a Circle */
+
+      /* Animation Play state allows the use to interact with the animation */
+      animation-play-state: running;
+
+      /* animation shorthand*/
+      background-color: lightseagreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    Scar Tissues
+  </div>
+  <div class="box2">
+    That I wish you saw
+  </div>
+</body>
+</html>

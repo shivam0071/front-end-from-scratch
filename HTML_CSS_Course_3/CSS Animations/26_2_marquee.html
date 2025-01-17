@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marquee</title>
+  <style>
+    h1{
+      color: white;
+    }
+    body{
+      /* background-color: black; */
+      background-image: url(images/universe.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      overflow: hidden;
+    }
+    .box{
+      width: 500px;
+      height: 500px;
+      background-color: rgba(0, 0, 0, 0.452);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      text-align: center;
+      align-content: center;  
+      overflow: hidden;
+      border: 1px solid rgb(255, 255, 255);
+      box-shadow: 0 0 25px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255) inset;
+      
+      animation-name: spin;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-play-state: running;
+
+    }
+
+    p{
+      color: white;
+      padding: 20px;
+      margin: 0;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      border: 2px solid aqua;
+      box-shadow: 0 0 8px aqua, 0 0 8px aqua inset;
+      border-radius: 1000px;
+
+      animation-name: translate;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-play-state: running;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+    }
+
+    .text2{
+      box-shadow: 0 0 8px rgb(0, 255, 68), 0 0 8px rgb(0, 255, 68) inset;
+      border: 2px solid rgb(0, 255, 68);
+      animation-duration: 2s;
+      bottom: 0%;
+      left: 40%;
+    }
+
+    .text3{
+      box-shadow: 0 0 8px rgb(229, 255, 0), 0 0 8px rgb(229, 255, 0) inset;
+      border: 2px solid rgb(229, 255, 0);
+      animation-duration: 4s;
+      bottom: 0%;
+      left: 70%;
+    }
+
+    @keyframes translate{
+      0%{
+        transform: translateY(0);
+      }
+      100%{
+        transform: translateY(-500px);
+      }
+    }
+
+    @keyframes spin{
+      0%{
+        transform: rotate(0deg);
+        border-radius: 0;
+      }
+      50%{
+        border-radius: 1000px;
+        transform: rotate(180deg);
+      }
+
+      100%{
+        transform: rotate(360deg);
+        border-radius: 0;
+      }
+    }
+
+    .sunlight{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+
+      width: 80px;
+      height: 80px;
+      background-color: yellow;
+      border-radius: 50%;
+      box-shadow: 0 0 50px yellow, 0 0 50px yellow inset;
+
+    }
+
+  </style>
+</head>
+<body>
+<div>
+  <marquee behavior="scroll" direction="left" scrollamount="10">
+    <!-- <h1>Modestep</h1> -->
+  </marquee>
+
+  <div class="box">
+    <p class="text">The Sunlight</p>
+    <p class="text2">Hurts My </p>
+    <p class="text3">Eyes</p>
+    <div class="sunlight">
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

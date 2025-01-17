@@ -1,8 +1,4 @@
-.navbar a:nth-child(2){
-  color: black;
-}
-
-.content{
+/* .content{
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -14,7 +10,7 @@
   font-weight: bold;
   margin-bottom: 30px;
   color: black;
-}
+} */
 
 iframe{
   border-radius: 20px;

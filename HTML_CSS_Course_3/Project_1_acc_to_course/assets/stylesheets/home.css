@@ -1,15 +1,17 @@
-.navbar a:first-child{
-  color: black;
+header{
+  margin-top: calc(50px + 1rem);
+  /* as per border box, 50px of padding amd 1 rem of content */
 }
 
-.content{
+/* .content{
   margin: 0 auto;
   width: 30%;
   text-align: center;
   margin-top: 60px;
-}
+} */
 
-.content p:first-child{
+
+/* .content p:first-child{
   font-size: 3rem;
   font-weight: bold;
   color: black
@@ -20,20 +22,121 @@
   line-height: 1.5;
   font-size: 0.9rem;
   
+} */
+
+h1{
+  margin-top: 100px;
+  font-size: 3.75rem;
+  font-weight: bold;
+  line-height: 1.2em;
 }
 
-.content button{
+h1 + p {
+  width: 800px;
+  margin: 35px auto;
+}
+
+.content a{
+  display: inline-block;
   color: white;
+  border-radius: 1000px;
+  padding: 1em 3em;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(to right, #D786ff, #722CFF);
+  text-transform: uppercase;
+  transition: 150ms ease;
+
+}
+
+.content a:hover{
+    scale: 1.1;
+}
+
+
+iframe{
   margin-top: 30px;
   border-radius: 20px;
-  /* width: 200px; */
-  padding: 15px 30px;
-  /* height: 45px; */
+  width: min(1100px, 100%);
+  aspect-ratio: 16 / 9;
+}
 
+
+.products-container{
+    margin-top: 30px;
+}
+
+.item{
+  line-height: 1.5;
+
+  background-color: grey;
+  display: inline-block;
+  width: 300px;
+  margin: 0 20px;
+  margin-bottom: 10px;  
+  align-content: center;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.item > h2{
+  margin-bottom: 20px;
+}
+
+.item:first-child{
+  background-color: white;
+  border: 2px solid grey;
+}
+
+.item:nth-child(2){
+  background-color: #7932ff;
+  color: white;
+}
+
+.item:last-child{
+  background-color: black;
+  color: white;
+}
+
+form{
+  margin-top: 30px;
+}
+
+input{
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+  font: inherit;
+}
+
+input[type="email"], input[type="password"]{
+
+  padding: 5px 20px;
+  border-radius: 30px;
   border: none;
-  cursor: pointer;
-  font-weight: bold;
-  background: linear-gradient(to right, #eaafff, #540072);
-  text-transform: uppercase;
+  background-color: #EBEDF5;
+  width: 400px;
+  height: 50px;
+}
 
+input[type="email"]:focus, input[type="password"]:focus{
+  outline: none;
+  background-color: rgb(197, 228, 241);
+}
+
+input:focus::placeholder{
+  opacity: 0.5;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+input[type="submit"]{
+  width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  background-color: rgb(48, 154, 247);
+  color: white;
+  font-weight: 600;
+  border: none;
 }

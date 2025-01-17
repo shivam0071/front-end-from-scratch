@@ -1,15 +1,33 @@
-.navbar{
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* .navbar{
   align-content: center;
   text-align: center;
   background-color: white;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+
   height: 60px;
   border: none;
-}
+} */
 
-.navbar a{
+nav a{
   text-decoration: none;
-  margin-left: 30px;
+  margin: 0 20px;
   color: grey;
   cursor: pointer;
+}
+
+nav a:hover{
+  color: black;
+}
+
+nav a.active{
+  color: black;
 }

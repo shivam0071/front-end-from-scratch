@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky To Navbar</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      height: 3000px;
+    }
+    nav{
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      background-color: black;
+      height: 50px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .links-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    nav .home{
+      margin-right: auto;
+    }
+    nav a{
+      font-size: 16px;
+      padding: 0px 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    nav a:hover{
+      color: blue;
+    }
+
+    .main-container{
+      padding-top: 250px;
+      background-color: lavender;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px
+    }
+
+    .stick-me{
+      width: 500px;
+      height: 100px;
+      background-color: aquamarine;
+      position: sticky;
+      top: 70px;
+    } 
+    /* .buttons{
+      margin-top: 100px;
+    } */
+    /* .margin{
+      margin-top: 100px;
+    } */
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="links-container">
+     <a class="home" href="">Home</a>
+     <a href="">About</a>
+     <a href="">Products</a>
+     <a href="">Contact</a>
+     <a href="">Service</a>
+     <a href="">Login</a>
+    </div>
+  </nav>
+  <div class="main-container">
+    <div class="stick-me">
+    </div>
+    <div class="buttons">
+      <button>Click Me</button>
+    </div>
+  </div>
+</body>
+</html>

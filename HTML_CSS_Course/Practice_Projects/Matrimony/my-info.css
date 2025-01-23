@@ -1,3 +1,15 @@
+.sidebar{
+position: relative;
+}
+
+.main-content{
+  height: 100%;
+}
+
+.main-container{
+  height: 100%;
+}
+
 .my-info{
   display: flex;
   flex-direction: column;
@@ -6,6 +18,9 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   gap: 50px;
   padding-bottom: 15px;
+  position: sticky;
+  top: 100px;
+  background-color: white;
 }
 
 

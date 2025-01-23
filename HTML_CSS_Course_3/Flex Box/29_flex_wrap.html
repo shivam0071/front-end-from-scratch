@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <style>
+    body{
+      min-height: 700px;
+      /* True Center of a Div using Flex */
+      display: flex;
+      gap: 20px;
+      border: 1px solid black;
+      flex-wrap: wrap;
+      /* Brings items in the next line */
+
+      justify-content: center;
+      /* Center Horizontally */
+      align-items: center;
+      /* MODIFIES AXIS of a single Row*/
+      align-content: center;
+      /* COMPLETE PAGE AXIS */
+      /* when flex-wrap is wrap, then only align content gets activated */
+
+    }
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      border: 0.1px solid black;
+    }
+
+    @media (max-width: 400px){
+      div{
+      height: max-content;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+</body>
+</html>

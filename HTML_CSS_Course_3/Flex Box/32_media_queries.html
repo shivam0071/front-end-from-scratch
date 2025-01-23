@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+    body{
+      background-color: grey;
+    }
+
+     /* This is desktop first design */
+     /* 0 to 1000 */
+    @media(max-width: 1000px){
+      body{
+        background-color: aqua;
+      }
+    }
+    /* This is mobile first design */
+    /* from 100 to 600 */
+    @media(min-width: 100px) and (max-width: 600px){
+      body{
+        background-color: lightcoral;
+      }
+    }
+
+    /* EXTRA LARGE DEVICES min-width: 1200px  -- 1200px and above */
+    /* Normal DEVICES min-width: 992px  -- 922px and above */
+    /* Medium DEVICES min-width: 768px  -- 768px and above */
+    /* Small DEVICES min-width: 600px  -- 600px and above */
+    /* EXtra Small DEVICES max-width: 600px  -- 0 to 600px */
+  </style>
+</head>
+<body>
+  
+</body>
+</html>

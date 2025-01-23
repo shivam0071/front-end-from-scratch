@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <style>
+    body{
+      min-height: 700px;
+      /* True Center of a Div using Flex */
+      display: flex;
+      gap: 10px;
+      border: 1px solid black;
+
+    }
+
+    #box1{
+      flex-shrink: 0;
+    }
+    #box2{
+      flex-grow: 5;
+    }
+
+    div{
+      flex-shrink: 1;
+      /* 0 means OFF, no shirnk */
+      /* Shrink is a property that is used in the child */
+      flex-grow: 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      border: 0.1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1">
+    1
+  </div>
+  <div id="box2">
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+</body>
+</html>

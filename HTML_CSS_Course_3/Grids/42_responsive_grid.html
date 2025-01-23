@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRIDS - RESPONSIVE</title>
+  <style>
+    body{
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    .card{
+      color: white;
+      border: 1px red solid;
+      background-color: rgb(22, 22, 22);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .grid-container{
+      border: 1px solid blue;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      /* grid-template-columns: repeat(4, 250px);   */
+      /* This means repeat 250px 4 times, which is 4 columns */
+
+      /* grid-template-columns: repeat(auto-fit, 250px);   */
+      /* how many times we can fit 250px, it tries to add as many columns as possible */
+
+      /* Now if we want the boxes to grow as much as the space is available we use fr, but it causes an issue */
+      /* grid-template-columns: repeat(auto-fit, 1fr);   */
+      /* But auto-fits tries to fit everything and we are left with a single column */
+
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+    }
+  </style>
+</head>
+<body>
+  <h1>Reponsive Grids</h1>
+  <div class="grid-container">
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+
+    <div class="card">
+      <h1>Lorum Ipsum</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat numquam excepturi rerum impedit iusto eius in voluptatem laboriosam odit assumenda ratione sed quis, officia soluta distinctio illo beatae.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+23-01-2025 -- 30 mins  00:43:00
+24-01-2025 -- 50 mins  01:51:00
+25-01-2025 -- 95 mins  03:35:00
+
+
+THINGS I AM GOING TO FORGET
+
+
+PYTHON VS JS
+
+  * type('3') in python -- typeof '3' in JS
+
+  * f string in python , `` in JS
+
+  * """  in python , `` in JS 
+    """
+
+
+#### NUMBERS ####
+
+  * Calculate costs in cents, paisa etc due to floating problems
+  * Math.round() doesn't have a round number?? wtf??
+
+  * (2095 + 799 + 1899 + 499)/100 + Math.round((2095 + 799 + 1899 + 499) * 0.1)/100
+ 
+
+
+ ### STRINGS ###
+
+ 3 + 'Hello' 
+ >>> 3Hello
+
+ type('3') in python -- typeof '3' in JS
+
+ Creating String --
+''
+""
+``
+
+f string in python , `` in JS
+"""  in python , `` in JS 
+"""
+
+`Sum is ${2+2}`
+>>> "Sum is 4"
+
+`Sum is
+${4+4}`
+>>> "Sum is
+8"
+
+
+##### VARIBALES ######
+
+let varCase = 'when we want to change its value';
+varCase = 'See, It got changed';
+varCase = 3;
+const camelCase = 'Use it by default, when we know a variable is not going to changes';
+var isUsed = 'older js code, not used anymore';
+
+
+#### BOOLEAN ####
+true
+false
+
+operators -- (They have least priority in a statement -- () >> */ >> += >> operators === >> && or  )
+  >
+  <
+  ===  ( dpn't use == as it type converts and then compares 5 == '5.00' is true acc to ==)
+  !==
+  >=
+  <=
+
+Logical operators
+
+&& - and 
+|| - or
+! - not
+
+##### IF ELSE Statements ######
+
+if(true){
+
+}
+else if (33 == 33){
+
+}
+else{
+
+}
+
+Falsy Values -- '', 0, NaN (not a number) ['name' / 3], undefined (let var1;), null
+
+
+IF SHORTCUTS
+
+Ternary Operator ?:
+true ? 'truth' : 'Falsy' 
+    if {}      else{}
+
+2.) Guard Operator
+
+const res = false && 'Hello'
+>>> false
+const res = 5 && 'Hello'
+>>> 'Hello'
+
+3.) Default Operator
+const currency = INR || USD
+>>> INR
+const currency = undefined || USD
+>>> USD

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Recall Notes - JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        h2,
+        h3 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Total Recall Notes - JS</h1>
+
+    <div class="section">
+        <h2>Date Log</h2>
+        <ul>
+            <li><strong>23-01-2025</strong> -- 30 mins 00:43:00</li>
+            <li><strong>24-01-2025</strong> -- 50 mins 01:51:00</li>
+            <li><strong>25-01-2025</strong> -- 95 mins 03:35:00</li>
+            <li><strong>26-01-2025</strong> -- 100 mins 05:25:00</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Things I Am Going To Forget</h2>
+        <ul>
+            <li><strong>VS Code Shortcuts</strong>
+                <pre>Reformat Code - <b>Alt + Shift + F</b></pre>
+                <pre>Toggle Project Navigator - CTRL + B</pre>
+            </li>
+        </ul>
+
+        <h3>Python vs JavaScript</h3>
+        <ul>
+            <li><strong>Type Checking:</strong>
+                <pre>Python: type('3') 
+JavaScript: typeof '3'</pre>
+            </li>
+            <li><strong>String Formatting:</strong>
+                <pre>Python: f-string
+JavaScript: Template literals (``)</pre>
+            </li>
+            <li><strong>Multi-line Strings:</strong>
+                <pre>Python: """ ... """
+JavaScript: Template literals (``)</pre>
+            </li>
+            <li><strong>Multi-line Strings:</strong>
+                <pre>JS is call by reference</pre>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Numbers</h3>
+        <ul>
+            <li><strong>Floating Point Issues:</strong> Always calculate costs in cents/paisa to avoid floating point
+                problems.</li>
+            <li><strong>Rounding:</strong> Math.round() may not behave as expected.</li>
+            <li><strong>Example Calculation:</strong>
+                <pre>(2095 + 799 + 1899 + 499) / 100 + Math.round((2095 + 799 + 1899 + 499) * 0.1) / 100</pre>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Strings</h3>
+        <ul>
+            <li><strong>Concatenation:</strong>
+                <pre>3 + 'Hello' results in 3Hello.</pre>
+            </li>
+            <li><strong>Creating Strings:</strong>
+                <pre>'' 
+"" 
+``</pre>
+            </li>
+            <li><strong>String Interpolation:</strong>
+                <pre>`Sum is ${2 + 2}` // "Sum is 4"
+`Sum is ${4 + 4}` // "Sum is 8"</pre>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Variables</h3>
+        <pre>
+let varCase = 'when we want to change its value';
+varCase = 'See, It got changed';
+varCase = 3;
+
+const camelCase = 'Use it by default, when we know a variable is not going to change';
+var isUsed = 'older js code, not used anymore';
+        </pre>
+    </div>
+
+    <div class="section">
+        <h3>Boolean</h3>
+        <ul>
+            <li><strong>Values:</strong> true, false</li>
+            <li><strong>Operators Priority:</strong> () >> */ >> += >> operators === >> && or</li>
+            <li><strong>Comparison Operators:</strong> >, <,===, !==,>=, <= (Avoid==as it performs type
+                        conversion.)</li>
+            <li><strong>Logical Operators:</strong> && - and, || - or, ! - not</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>If-Else Statements</h3>
+        <pre>
+if (true) {
+    // code
+} else if (33 == 33) {
+    // code
+} else {
+    // code
+}
+        </pre>
+        <p><strong>Falsy Values:</strong> '', 0, NaN, undefined, null</p>
+    </div>
+
+    <div class="section">
+        <h3>If Shortcuts</h3>
+        <ul>
+            <li><strong>Ternary Operator:</strong>
+                <pre>true ? 'truth' : 'Falsy';</pre>
+            </li>
+            <li><strong>Guard Operator:</strong>
+                <pre>const res1 = false && 'Hello'; // false
+const res2 = 5 && 'Hello'; // 'Hello'</pre>
+            </li>
+            <li><strong>Default Operator:</strong>
+                <pre>const currency1 = INR || USD; // INR
+const currency2 = undefined || USD; // USD</pre>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Functions</h3>
+        <ul>
+            <li><strong>Function Declaration</strong>
+                <pre>
+function functionName(){}
+functionName()</pre>
+            </li>
+            <li><strong>Function Parameters and Arguments</strong>
+                <pre>
+function functionName(param1, param2=10){}
+functionName(arg1, arg2);</pre>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Objects</h3>
+        <ul>
+            <li><strong>Objects</strong>
+                <pre>
+Objects are like dictionary of Python.
+const obj1 = {name: 'some name', age: 22, method: function(){console.log('Func inside obj1')}}
+obj1.name
+obj1['name'] -- When we have key like 'some-name' we can use ['some-name'] to get the key
+</pre>
+            </li>
+            <li><strong>JSON</strong>
+                <pre>
+We can convert Objects into JSON string using
+JSON.stringify(obj1);
+            </pre>
+            <pre>
+We can convert JSON String back to Obj using
+JSON.parse(JSON.stringify(obj1));
+                            </pre>
+            </li>
+            <li><strong>Local Storage</strong>
+                <pre>
+We can save these objects into localstorage so that the data is preserved even if page is refreshed.
+The objects are stored as JSON strings into localstorage
+localstorage.setItem('score', scoreObj)
+localstorage.getItem('score');
+localstorage.removeItem('score');
+          </pre>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

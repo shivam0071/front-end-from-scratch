@@ -29,13 +29,25 @@ prev.addEventListener('click', () => {
 
 function update(){
   circles.forEach((circle, idx) => {
-    if(idx < progressCounter){
-      circle.classList.add('active');
+    if(idx < progressCounter) {
+        // First remove active-animate class from all circles
+        circle.classList.remove('active-animate')
+        
+        // Add active class
+        circle.classList.add('active')
+        
+        // Add animation class only to the current circle
+        if(idx === progressCounter - 1) {
+            circle.classList.add('active-animate')
+            // Remove the animation class after animation completes
+            setTimeout(() => {
+                circle.classList.remove('active-animate')
+            }, 300)
+        }
+    } else {
+        circle.classList.remove('active')
     }
-    else{
-      circle.classList.remove('active');
-    }
-  });
+})
 
   const active = document.querySelectorAll('.active');
   progress.style.width = ((active.length - 1) / (circles.length - 1)) * 100 + '%'

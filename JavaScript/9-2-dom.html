@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play with DOM</title>
+  <style>
+    body {
+      background-color: #616161;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .section {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+  </style>
+</head>
+
+<body>
+  <div class="section">
+    <p>YouTube Subscribe Button</p>
+    <button class="js-sub">Subscribe</button>
+  </div>
+  <div class="section">
+    <p>Rock Paper Scissor</p>
+    <a href="9-3-rock-paper.html">Click Here...</a>
+  </div>
+  <div class="section">
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping. </p>
+    <input onkeydown="
+    calculateCostOnKeyDown(event)" class='js-input' type="number" placeholder="Cost of Order">
+    <button
+    onclick="
+      calculateCost();
+    ">Calculate</button>
+    <p class="js-result"></p>
+  </div>
+
+  <script>
+    const subBtnElem = document.querySelector('.js-sub');
+    subBtnElem.addEventListener('click', () => {
+      if (subBtnElem.innerText === 'Subscribe'){
+        subBtnElem.innerHTML = 'Subscribed';
+      }
+      else{
+        subBtnElem.innerHTML = 'Subscribe';
+      }
+
+    });
+
+    function calculateCostOnKeyDown(event){
+      if(event.key === 'Enter'){
+        calculateCost();
+      }
+    }
+
+    function calculateCost(){
+      const inputElem = document.querySelector('.js-input');
+      const resElem = document.querySelector('.js-result');
+      let cost = Number(inputElem.value);
+      if (cost < 40){
+        cost = cost + 10;
+      }
+      resElem.innerHTML = `$ ${cost}`
+    }
+  </script>
+</body>
+
+</html>

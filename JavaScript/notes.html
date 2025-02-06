@@ -61,6 +61,8 @@
             <li><strong>26-01-2025</strong> -- 100 mins 05:25:00</li>
             <li><strong>27-01-2025</strong> -- 65 mins 06:38:00</li>
             <li><strong>28-01-2025</strong> -- 50 mins 07:42:00</li>
+            <li><strong>04-02-2025</strong> -- 40 mins 08:07:00</li>
+            <li><strong>06-02-2025</strong> -- 80 mins 09:15:00</li>
         </ul>
     </div>
 
@@ -281,6 +283,70 @@ We can get the HTML elems by tag, class or ID and add classes innerHTML or value
 </pre>
 <pre>
 Use elem.innerText to get only the text, for comparisons and all.</pre>
+    </div>
+
+    <div class="section">
+        <h3>Array</h3>
+        <ul>
+            <li><strong>Arrays</strong>
+                <pre>
+                    arr = [3, 5, 7, {1:2, 3:4}, 'str']
+                    Array
+                    .isArray(arr) --> True
+
+                    // Length of Array
+                    arr.length;
+                    
+                    // Appending an Element in the end of the arr
+                    arr.push(100)
+</pre></li>
+<li><strong>Splicing an Array</strong>
+<pre>
+
+    // Splicing an Array -- Inplace, modifies original list 
+    // splice can be used to remove, add, or replace elements in an array.
+    
+    // array.splice(start, deleteCount, item1, item2, ...)
+    // deleteCount: The number of elements to remove from the array.
+
+    let fruits = ['Apple', 'Banana', 'Cherry', 'Date'];
+    let removed = fruits.splice(1, 2); // Start at index 1, remove 2 elements
+    console.log(fruits); // Output: ['Apple', 'Date']
+    console.log(removed); // Output: ['Banana', 'Cherry']
+
+    let numbers = [1, 2, 3];
+    numbers.splice(1, 0, 4, 5); // Start at index 1, remove 0 elements, add 4 and 5
+    console.log(numbers); // Output: [1, 4, 5, 2, 3]
+
+    let colors = ['Red', 'Green', 'Blue'];
+    colors.splice(1, 1, 'Yellow'); // Start at index 1, remove 1 element, add 'Yellow'
+    console.log(colors); // Output: ['Red', 'Yellow', 'Blue']
+
+    let animals = ['Dog', 'Cat', 'Fish', 'Bird'];
+    animals.splice(2); // Start at index 2, remove all elements from that index
+    console.log(animals); // Output: ['Dog', 'Cat']
+</pre>
+</li>
+    </div>
+
+    <div class="section">
+        <h3>LOOPS</h3>
+        <ul>
+            <li><strong>While Loop and For Loop</strong>
+                <pre>
+let i = 1
+while(i <= 5){
+    console.log(i);
+    i++
+}
+</pre>
+<pre>
+for(let i=1; i<=5; i++){
+    console.log(i);
+}
+</pre>
+    </div>
+
 </body>
 
 </html>

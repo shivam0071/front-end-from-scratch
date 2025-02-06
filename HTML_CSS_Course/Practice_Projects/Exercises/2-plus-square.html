@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plus Square</title>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container{
+      width: 500px;
+      height: 500px;
+      background-color: lightblue;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .double,.single{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .double div, .single div{
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      /* For Text to center */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .single{
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="single">
+      <div>1</div>
+    </div>
+   
+    <div class="double">
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+
+    <div class="single">
+      <div>5</div>
+  </div>
+  </div>
+</body>
+</html>

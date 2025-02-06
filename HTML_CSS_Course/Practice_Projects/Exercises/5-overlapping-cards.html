@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlapping Cards</title>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container{
+      width: 500px;
+      height: 500px;
+      background-color: rgb(0, 0, 0);
+
+      position: relative;
+    }
+
+    .container div{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-color: red;
+      left: 200px;
+      top: 200px;
+      translate: -50% -50%;
+    }
+
+    .container .card1{
+      background-color: rgb(255, 46, 46);
+      box-shadow: 0 0 10px rgb(255, 46, 46), 0 0 10px rgb(255, 46, 46) inset;
+    }
+
+    .container .card2{
+      left: 250px;
+      top: 250px;
+      background-color: rgb(175, 255, 16);
+      box-shadow: 0 0 10px rgb(175, 255, 16), 0 0 10px rgb(175, 255, 16)inset;
+    }
+    .container .card3{
+      left: 300px;
+      top: 300px;
+      background-color: rgb(122, 70, 255);
+      box-shadow: 0 0 10px rgb(122, 70, 255), 0 0 10px rgb(122, 70, 255) inset;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card1"></div>
+    <div class="card2"></div>
+    <div class="card3"></div>
+  </div>
+</body>
+</html>

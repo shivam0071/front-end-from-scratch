@@ -19,14 +19,14 @@
       /* --white-color: #f5f5dc; 
       --black-color: #8b4513;  */
 
-      /* --white-color: #ffcccb; 
-      --black-color: #8b0000;  */
+      --white-color: #ffcccb; 
+      --black-color: #8b0000; 
 
       /* --white-color: #ffffe0; 
       --black-color: #556b2f;  */
 
-      --white-color: #e6e6fa; 
-      --black-color: #4b0082;
+      /* --white-color: #e6e6fa; 
+      --black-color: #4b0082; */
     }
 
 
@@ -97,98 +97,180 @@
       transform: scale(1.1);
     }
 
+    .single div:active{
+      transform: scale(4.1);
+    }
+
+    .active{
+      transform: scale(2.1);
+    }
+
+    .surprise{
+      font-size: 20px;
+      margin-bottom: 20px;
+      border: none;
+      padding: 10px;
+      background-color: var(--black-color);
+      color: white;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px var(--black-color);
+      transition: transform 50ms linear;
+    }
+    .surprise:disabled{
+      color: rgb(220, 220, 220);
+      background-color: grey;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .btn-black{
+      background-color: var(--black-color);
+    }
+    .btn-white{
+      background-color: var(--white-color);
+      color: black
+    }
+    .surprise:active{
+      transform: scale(1.2);
+    }
 
   </style>
 </head>
 <body>
   <div class="container">
+    <button class="surprise" onclick="
+      execute();
+      ">Surprise Me!!</button>
     <div class="single white">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="n1"></div>
+      <div class="n2"></div>
+      <div class="n3"></div>
+      <div class="n4"></div>
+      <div class="n5"></div>
+      <div class="n6"></div>
+      <div class="n7"></div>
+      <div class="n8"></div>
     </div>
 
     <div class="single black">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="n9"></div>
+      <div class="n10"></div>
+      <div class="n11"></div>
+      <div class="n12"></div>
+      <div class="n13"></div>
+      <div class="n14"></div>
+      <div class="n15"></div>
+      <div class="n16"></div>
     </div>
 
     <div class="single white">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="n17"></div>
+      <div class="n18"></div>
+      <div class="n19"></div>
+      <div class="n20"></div>
+      <div class="n21"></div>
+      <div class="n22"></div>
+      <div class="n23"></div>
+      <div class="n24"></div>
     </div>
 
     <div class="single black">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="n25"></div>
+      <div class="n26"></div>
+      <div class="n27"></div>
+      <div class="n28"></div>
+      <div class="n29"></div>
+      <div class="n30"></div>
+      <div class="n31"></div>
+      <div class="n32"></div>
     </div>
 
     <div class="single white">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="n33"></div>
+      <div class="n34"></div>
+      <div class="n35"></div>
+      <div class="n36"></div>
+      <div class="n37"></div>
+      <div class="n38"></div>
+      <div class="n39"></div>
+      <div class="n40"></div>
     </div>
 
     <div class="single black">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="n41"></div>
+      <div class="n42"></div>
+      <div class="n43"></div>
+      <div class="n44"></div>
+      <div class="n45"></div>
+      <div class="n46"></div>
+      <div class="n47"></div>
+      <div class="n48"></div>
     </div>
 
     <div class="single white">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="n49"></div>
+      <div class="n50"></div>
+      <div class="n51"></div>
+      <div class="n52"></div>
+      <div class="n53"></div>
+      <div class="n54"></div>
+      <div class="n55"></div>
+      <div class="n56"></div>
     </div>
 
     <div class="single black">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="n57"></div>
+      <div class="n58"></div>
+      <div class="n59"></div>
+      <div class="n60"></div>
+      <div class="n61"></div>
+      <div class="n62"></div>
+      <div class="n63"></div>
+      <div class="n64"></div>
     </div>
   </div>
+  <script>
+    function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    let surpriseCount = 0;
+    let btnColor = 'black';
+
+    async function execute() {
+      let surpriseBtn = document.querySelector(`.surprise`);
+      surpriseCount ++;
+      if (surpriseCount <= 30){
+      surpriseBtn.innerHTML = `Dance: ${surpriseCount}`;
+      if(btnColor === 'black'){
+        surpriseBtn.classList.remove('btn-black');
+        surpriseBtn.classList.add('btn-white');
+        btnColor = 'white';
+      }
+      else{
+        surpriseBtn.classList.remove('btn-white');
+        surpriseBtn.classList.add('btn-black');
+        btnColor = 'black';
+      }
+
+      }
+      else{
+        surpriseBtn.innerHTML = 'Cooked XD'
+        surpriseBtn.disabled = true;
+      }
+
+        let num = 0;
+        for(let i=0; i< 1000; i++){
+          num = getRandomNumber();
+          let currBox = document.querySelector(`.n${num}`);
+          currBox.classList.add('active');
+          await sleep(250); // Sleep for 2 seconds
+          currBox.classList.remove('active');
+        }
+    }
+    // execute();
+    function getRandomNumber() {
+    return Math.floor(Math.random() * 64) + 1;
+}
+  </script>
 </body>
 </html>
